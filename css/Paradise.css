@@ -1,0 +1,248 @@
+:root{
+    --color-log: #f1c0e8;
+    --yellow-log: #FFFF83;
+    --Pink1: #FF0A54;
+    --Pink2: #FF477E;
+    --Pink3: #FF5C8A;
+    --Pink4: #ff477e;
+    --Pink5: #FBB1BD;
+    --Pink6: #F7CAD0;
+    --titles-font: 'Style Script', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    min-width: 350px;
+    height: 500px;
+    max-height: 700px;
+    position: relative;
+    background-color: var(--color-log);
+    border-bottom: 3px solid var(--Pink4);
+}
+nav{
+    margin-top: px;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 3px solid var(--Pink4);
+    perspective: 8px;
+    transition: background-color 1s;
+    z-index: 2;
+}
+nav.abajo{
+    background-color: var(--Pink6);
+    padding-top: 10px;
+}
+.Nav-icons{
+    width: 30px;
+}
+.Nav-title{
+    font-size: 3rem;
+    font-family: var(--titles-font);
+    transition: transform 2s;
+}
+.Nav-title span{
+    font-size: 0;
+}
+.Nav-title:hover{
+    transform: scale(1.2);
+}
+.Nav--social-networks-list{
+    list-style: none;
+}
+.Nav--social-networks-list li{
+    display: inline-block;
+}
+.Nav--social-networks-list .social-networks{
+    width: 40px;
+    margin-left: 5px;
+}
+.social-networks:hover{
+    transform: rotate(35deg);
+    transition: all 1s;
+}
+.header--info-company{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header--info-company figure{
+    display: flex;
+    justify-content: center;
+}
+.info-company-logo{
+    width: 60%;
+    min-width: 250px;
+    max-width: 400px;
+    padding-top: 110px;
+    transform: translateZ(5px);
+}
+.info-company-slogan{
+    margin-top: 20px;
+
+    text-align: center;
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: bold;
+}
+.info-company-slogan p:nth-child(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    color: #fff;
+}
+
+.Header-Button{
+    position: absolute;
+    top: 470px;
+    border: none;
+    border: 3px solid #fff;
+    width: 70%;
+    min-width: 250px;
+    max-width: 500px;
+    padding: 5px 0;
+    border-radius: 20px;
+    background-color: var(--Pink4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Header-Button span{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/467/467282.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    transition: transform 2s;
+}
+.Header-Button:hover span{
+    transform: rotate(90deg);
+}
+.Header-Button a{
+    text-decoration: none;
+    font-family: 'Style Script', cursive;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.Main--both-product{
+    width: 100%;
+    min-width: 350px;
+    height: 550px;
+    background-color: var(--color-log);
+    border-bottom: 2px solid var(--Pink1);
+}
+.Main--both-product h2{
+    padding-top: 50px;
+
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--Pink1);
+}
+
+.both-product--kind-flowers{
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 35px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.type-of-product{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    padding: 15px 30px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    margin: 0 75px;
+}
+.type-of-product h3{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--Pink4);
+}
+.product--img{
+    width: 150px;
+    object-fit: cover;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.know-more-button{
+    position: absolute;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Style Script', cursive;
+    font-size: 2.5rem;
+    background-color: var(--Pink4);
+    border: 2px solid #fff;
+    top: 325px;
+    color: #fff;
+}
+section.history{
+    width: 100%;
+    min-width: 350px;
+    height: 550px;
+    background-image: url('https://images.pexels.com/photos/196664/pexels-photo-196664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid var(--Pink1);
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.history--who-are-we{
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 0 20px;
+    height: 300px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    transform: translateZ(10px);
+}
+.who-Title{
+    font-size: 3rem;
+    color: var(--yellow-log);
+    margin-bottom: 20px;
+}
+.who-context{
+    padding: 0 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-log);
+}

@@ -1,0 +1,27 @@
+.header--info-company{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.info-company-logo{
+    max-width: 600px;
+}
+.both-product--kind-flowers{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+section.history{
+    justify-content: center;
+}
+.who-Title{
+    font-size: 4rem;
+}
+.who-context{
+    font-size: 3rem;
+}
+.Nav-title span{
+    font-size: 3rem;
+}
